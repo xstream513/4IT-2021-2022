@@ -16,4 +16,13 @@ public class Functions {
         System.out.println("Hello world! My name is Jan.");
     }
 
+    public static void pozdrav() {
+        String jmeno = "Michal";
+        System.out.println("Ahoj světe! Jmenuji se" + jmeno);
+    }
+
+    public static void jmenoFunkce() {
+        // TODO implementovat funknčnost
+    }
+
 }
