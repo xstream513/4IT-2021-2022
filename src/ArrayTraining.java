@@ -3,7 +3,7 @@ public class ArrayTraining {
     public static void main(String[] args) {
         // 192.168.45.80
         validateIPv4("192.168.45.80");
-        decimalToBinary(5);
+        System.out.println(decimalToBinary(12));
 
         // zkuste si doma udělat funkci binaryToDecimal, která převede číslo ve dvojkové soustavě na desítkovou
     }
@@ -21,7 +21,13 @@ public class ArrayTraining {
                 mezikrok = mezikrok / 2;
             }
         }
-        return vysledek;
+        return reverseString(vysledek);
+    }
+
+    public static String reverseString(String str){
+        StringBuilder sb=new StringBuilder(str);
+        sb.reverse();
+        return sb.toString();
     }
 
     public static boolean validateIPv4(String input) {
